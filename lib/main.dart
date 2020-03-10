@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'description_place.dart';
-import 'review_list.dart';
-import 'gradient_back.dart';
-import 'header_appbar.dart';
-
+import 'trips.dart';
 
 
 void main() => runApp(MyApp());
@@ -29,21 +25,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home:Scaffold(
-        //body: new DescriptionPlace("Hola Mundo", 4, descriptionDummy),
-        body: Stack(
-          children: <Widget>[
-             ListView(
-               children: <Widget>[
-                 DescriptionPlace("Hola Mundo", 4, descriptionDummy),
-                 ReviewList()
-               ],
-             ),
-            HeaderAppbar()
-
-        ],
-        ),
-       ),
+      home: Trips()
       //MyHomePage(title: 'holi'),
     );
   }
