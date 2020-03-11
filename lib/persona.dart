@@ -78,6 +78,7 @@ class Persona extends StatelessWidget{
     
     
     return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
       children: <Widget>[
           fotouser,
           detallesuser
