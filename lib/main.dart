@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'trips.dart';
+import 'calendario1.dart';
 
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
 
-  String descriptionDummy = "Las oraciones descriptivas no utilizan verbos de acción sino de estado. Las descripciones caracterizan algo y no le asignan comportamientos particulares, sino que se detienen en sus características generales.";
+  
 
   // This widget is the root of your application.
   @override
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Trips()
+      home: Calendario1()
       //MyHomePage(title: 'holi'),
     );
   }

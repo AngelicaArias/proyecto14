@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'calendar.dart';
 import 'home_trips.dart';
 import 'search_trips.dart';
 import 'profile_trips.dart';
@@ -17,7 +18,8 @@ class _Trips extends State<Trips>{
     final List<Widget> widgetsChildren =[
         HomeTrips(),
         SearchTrips(),
-        ProfileTrips()
+        ProfileTrips(),
+        Calendar()
 
         
     ];
@@ -56,6 +58,10 @@ class _Trips extends State<Trips>{
                 ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.person),
+                title: Text("")
+                ),
+                BottomNavigationBarItem(
+                icon: Icon(Icons.calendar_view_day),
                 title: Text("")
                 ),
             ]

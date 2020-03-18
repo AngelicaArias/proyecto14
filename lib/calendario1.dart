@@ -1,17 +1,26 @@
-import 'dart:js';
 import 'package:flutter/material.dart';
 import 'package:flutter_rounded_date_picker/rounded_picker.dart';
+import 'dart:async';
 
-class SearchTrips extends StatefulWidget{
+class Calendario1 extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-  } 
+    return _Calendario1();
+  }
 }
-  Future<void> main() async {
+
+class _Calendario1 extends State<Calendario1>{
+  @override
+  Widget build(BuildContext context) {
     // TODO: implement build
-   
-      DateTime newDateTime = await showRoundedDatePicker(
+    return null;
+  }
+
+  Future<String>  createOrderMessage() async {
+  
+DateTime newDateTime = await showRoundedDatePicker(
+  context: context,
   background: Colors.white,
   theme: ThemeData(
     primaryColor: Colors.red[400],
@@ -25,7 +34,8 @@ class SearchTrips extends StatefulWidget{
     accentTextTheme: TextTheme(
       body2 : TextStyle(color: Colors.green[200]),
     ),
-  ), context: null,
+  ),
 );
-    return (newDateTime);
   }
+
+}
